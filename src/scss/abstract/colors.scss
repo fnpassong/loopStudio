@@ -1,0 +1,58 @@
+@use 'sass:map';
+
+:root {
+    --clr-white: hsl(0 0% 100%);
+    --clr-black:hsl(0 0% 0%);
+    --clr-dark-gray:hsl(0 0% 55%);
+    --clr-very-dark-gray:hsl(0 0% 41%);
+
+}
+
+// *****************COLORES**************************
+
+$colors :(
+    'white':var(--clr-white),
+    'black': var(--clr-black),
+    'gray': var(--clr-dark-gray),
+    'very-gray' : var(--clr-very-dark-gray),
+
+);
+
+@each $color, $val in $colors {
+    .clr-#{$color} {
+        color: $val;
+    }
+    .bg-#{$color} {
+        background-color: $val;
+    }
+}
+
+
+// *****************FIN COLORES**************************
+
+
+// *****************ICONOS**************************
+$iconos:(
+    'close':url(../../assets/icon-close.svg),
+    'fb': url(../../assets/icon-facebook.svg),
+    'ham': url(../../assets/icon-hamburger.svg),
+    'instagram': url(../../assets/icon-instagram.svg),
+    'pinterest': url(../../assets/icon-pinterest.svg),
+    'twitter': url(../../assets/icon-twitter.svg),
+    // 'logo': url(../../assets/logo.svg),
+);
+@each $icon, $icon-val in $iconos {
+    .icon-#{$icon} {
+        background-image: $icon-val;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1.5rem;
+        aspect-ratio: 1;
+    }
+}
+
+
+
+
+
+// *****************FIN ICONOS**************************
