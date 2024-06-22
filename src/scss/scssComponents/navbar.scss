@@ -1,8 +1,36 @@
 @use '../abstract/' as *;
 
 
+.menu {
+    min-width: 375px;
+    height: 650px;
+    background-image: url(../../assets/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    isolation: isolate;
 
-.logo {
-    width: 100%;
- 
+    &.menu__hidden::after {
+        content: '';
+        position: absolute;
+        inset:0;
+        background-color: var(--clr-black);
+        z-index: -1;  
+    }
+
+
+    &__nav {
+        @include flex(space-between, center, row);
+    }
+
+    
+    &__list.menu__notShow {
+        display: none;
+    }
+    
+    &__li {
+        display: block;
+        color: #fff;
+
+    }
 }

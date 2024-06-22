@@ -1,4 +1,12 @@
 
+@mixin flex($jC:center, $aI:center, $fD:row) {
+    display: flex;
+    justify-content: $jC;
+    align-items: $aI;
+    flex-direction: $fD;
+}
+
+
 .josefin {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
