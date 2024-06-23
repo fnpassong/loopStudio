@@ -3,8 +3,9 @@
 
 .menu {
     min-width: 375px;
-    height: 650px;
+    aspect-ratio: 9 / 16;
     background-image: url(../../assets/mobile/image-hero.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -18,9 +19,27 @@
         z-index: -1;  
     }
 
+    &__wrapper {
+        padding-block-start: 40px;
+    }
+
 
     &__nav {
         @include flex(space-between, center, row);
+    }
+
+    &__logo {
+        width: clamp(9rem, 7vw + 7rem, 12rem);
+    }
+
+    &__list {
+        position: relative;
+        width: 100%;
+    }
+
+    &__ul {
+        position: absolute;
+        left:0;
     }
 
     
@@ -31,6 +50,41 @@
     &__li {
         display: block;
         color: #fff;
+        text-decoration: none;
 
     }
+}
+
+.theSign {
+    height: 650px;
+}
+
+.sign {
+    // margin-block-start: 163px;
+
+   // width: 100%;
+    // border: 1px solid var(--clr-white);
+    
+    
+    &__hero {
+        
+        text-transform: uppercase;
+        padding: 1.5rem;
+        @extend .josefin;
+     
+        line-height: 1.05;
+        width: 100%;
+        border: 1px solid var(--clr-white);
+        text-align: center;
+    }
+
+    
+}
+
+.menu__wrapper:has(.theSign) .sign {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
