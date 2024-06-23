@@ -1,0 +1,36 @@
+@use '../abstract/' as *;
+
+
+.about {
+
+    margin-block-start: 6rem;
+
+    &__img {
+        min-width: 20.4375rem;
+        min-height: 14rem;
+        background-image: url(../../assets/mobile/image-interactive.jpg);
+        background-size: cover;
+    }
+
+    &__text {
+        margin-block-start: 3rem;
+    }
+
+    &__title {
+        @extend .josefin;
+        font-weight: normal;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin-block-end: 1rem;
+    }
+
+    &__paragraph {
+        text-align: center;
+        @extend .alata;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+    }
+
+}
