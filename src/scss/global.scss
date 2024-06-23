@@ -84,3 +84,7 @@ textarea:not([rows]) {
   width: min(100% - var(--gap), var(--max-width));
   margin-inline: auto;
 }
+
+section + section {
+  margin-block-start: 6rem;
+}
