@@ -30,7 +30,7 @@ const NavBar = () => {
 
           <div className={open ? 'icon-ham' : 'icon-close'} onClick={changeIcon}></div>
         </nav>
-        <div className="theSign">
+        <div className={open ? 'theSign' : 'theSign chau'}>
           <article className="sign clr-white">
             <h1 className='sign__hero'>
               immersive experiences that deliver
