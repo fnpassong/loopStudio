@@ -1,4 +1,4 @@
-import React from 'react'
+import '../scss/scssComponents/about.scss';
 
 const About = () => {
   return (
