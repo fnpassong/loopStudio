@@ -45,7 +45,7 @@ $iconos:(
     .icon-#{$icon} {
         background-image: $icon-val;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         width: 1.5rem;
         aspect-ratio: 1;
     }
