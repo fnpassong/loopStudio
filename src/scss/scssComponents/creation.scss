@@ -1,0 +1,74 @@
+@use '../abstract/' as *;
+
+.creation {
+
+
+    &__title {
+        @extend .josefin;
+        font-weight: normal;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin-block-end: 3rem
+    }
+
+    &__paragraph {
+        @extend .josefin;
+        font-size: 24px;
+        line-height: 1;
+        text-transform: uppercase;
+        width: 58px;
+    }
+
+    &__soccer {
+        width: 9.875rem;
+    }
+
+    &__from {
+        width: 9.875rem;
+    }
+
+    &__make {
+        width: 9.875rem;
+    }
+
+   &__picture {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+
+    & > img {
+        grid-row: 1 / 1;
+        grid-column: 1 / -1;
+    }
+   }
+
+   &__paragraph {
+    grid-row: 1 / 1;
+    grid-column: 1 / -1;
+    margin-inline-start: 20px;
+    margin-block-start: 52px;
+    
+}
+
+&__imgs {
+    margin-block-end: 2.125rem;
+}
+
+.btn {
+    display: block;
+    margin-inline: auto;  
+    border: 1px solid var(--clr-black);
+    @extend .alata;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+    line-height: 1;
+    background-color: transparent;
+    padding: 0.8125rem 2.4375rem;
+}
+
+
+}

@@ -1,7 +1,9 @@
+import Creation from '../components/Creation';
 import '../scss/scssComponents/about.scss';
 
 const About = () => {
   return (
+    <>
     <section className='about'>
       <div className="about__wrapper wrapper">
         <div className="about__leader">
@@ -17,6 +19,9 @@ const About = () => {
         </div>
       </div>
     </section>
+    <Creation/>
+    
+    </>
   )
 }
 
