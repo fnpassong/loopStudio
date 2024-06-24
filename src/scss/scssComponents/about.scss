@@ -33,4 +33,52 @@
         line-height: 1.5625rem;
     }
 
+    @media (min-width:1440px) {
+
+        .wrapper[data-width='desktop'] {
+            --gap:330px;
+            --max-width:1440px;
+        }
+
+        &__img {
+            min-width:45.6875rem;
+            min-height: 500px;
+            aspect-ratio:  16 / 9;
+            background-image: url(../../assets/desktop/image-interactive.jpg);
+            background-size:cover;
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
+        }
+
+        &__text {
+            background-color:var(--clr-white);
+            max-width: 33.8125rem;
+            max-height: 317px;
+            padding-block-start: 6rem;
+            padding-inline-start: 6rem;
+            grid-column: 4 / -1;
+            grid-row: 1 / 2;
+            align-content:last baseline;
+
+        }
+
+        &__title {
+            font-size: 3rem;
+            line-height: 1;
+            text-align: left;
+        }
+
+        &__leader {
+            
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+           
+        }
+
+        &__paragraph {
+            text-align: left;
+        }
+
+    }
+
 }

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
     <section className='about'>
-      <div className="about__wrapper wrapper">
+      <div className="about__wrapper wrapper" data-width='desktop'>
         <div className="about__leader">
           <div className="about__img"></div>
           <div className="about__text">
