@@ -14,7 +14,7 @@ const NavBar = () => {
 
   return (
     <div className={open ? 'menu' : 'menu menu__hidden'}>
-      <div className="menu__wrapper wrapper">
+      <div className="menu__wrapper wrapper" data-width='desktop'>
         <nav className="menu__nav">
           <img className='menu__logo' src= { logo } alt="" />
           <div className={open ? 'menu__list menu__notShow' : 'menu__list'}>
@@ -28,7 +28,7 @@ const NavBar = () => {
             </ul>
           </div>
 
-          <div className={open ? 'icon-ham' : 'icon-close'} onClick={changeIcon}></div>
+          <div className={open ? 'icon-ham none' : 'icon-close none'} onClick={changeIcon}></div>
         </nav>
         <div className={open ? 'theSign' : 'theSign chau'}>
           <article className="sign clr-white">
