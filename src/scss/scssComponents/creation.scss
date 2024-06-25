@@ -69,6 +69,25 @@
     background-color: transparent;
     padding: 0.8125rem 2.4375rem;
 }
+    @media (min-width:1000px) {
+        .wrapper[data-width='desktop'] {
+            --gap:20.625rem;
+            --max-width:1440px;
+        }
 
+        &__imgs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+        }
 
+        &__picture {
+            position: relative;
+        }
+
+        &__paragraph {
+            position: absolute;
+            bottom: 2rem;
+        }
+    }
 }

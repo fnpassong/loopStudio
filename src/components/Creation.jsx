@@ -4,7 +4,7 @@ import { imagenes } from './CreationData';
 const Creation = () => {
   return (
     <section className="creation">
-        <div className="creation__wrapper wrapper">
+        <div className="creation__wrapper wrapper" data-width='desktop'>
             <h2 className="creation__title">
                 our creations
             </h2>
