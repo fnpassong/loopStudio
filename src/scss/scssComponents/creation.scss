@@ -2,6 +2,8 @@
 
 .creation {
 
+    
+
 
     &__title {
         @extend .josefin;
@@ -68,7 +70,16 @@
     line-height: 1;
     background-color: transparent;
     padding: 0.8125rem 2.4375rem;
+
+
+    @media (min-width:375px) and (max-width: 800px) {
+
+        background-color: yellow;
+        display: flex;
+    }
 }
+
+
     @media (min-width:1000px) {
         .wrapper[data-width='desktop'] {
             --gap:20.625rem;
