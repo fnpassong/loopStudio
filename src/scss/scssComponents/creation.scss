@@ -3,7 +3,18 @@
 .creation {
 
     
+    &__wrapper {
+        position: relative;
+    }
 
+    &__banner:has(.btn) .btn {
+        background-color: blue;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%);
+        
+    }
 
     &__title {
         @extend .josefin;
@@ -42,6 +53,7 @@
     grid-template-rows: 1fr auto;
 
     & > img {
+        width: 100%;
         grid-row: 1 / 1;
         grid-column: 1 / -1;
     }
@@ -71,12 +83,6 @@
     background-color: transparent;
     padding: 0.8125rem 2.4375rem;
 
-
-    @media (min-width:375px) and (max-width: 800px) {
-
-        background-color: yellow;
-        display: flex;
-    }
 }
 
 
@@ -100,5 +106,17 @@
             position: absolute;
             bottom: 2rem;
         }
+
+        &__banner:has(.btn) .btn {
+            position: static;
+            transform: translate(0%);
+            
+        }
+
+        &__banner {
+            display: flex;
+            justify-content: space-between;
+        }
+       
     }
 }

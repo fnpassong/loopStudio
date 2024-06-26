@@ -1,17 +1,19 @@
-import { useState } from 'react';
+
 import '../scss/scssComponents/creation.scss';
 import { imagenes } from './CreationData';
-import Ejemplo from './Ejemplo';
+
 
 const Creation = () => {
 
-    const [boton, setBoton] =useState(true);
+    
   return (
     <section className="creation">
         <div className="creation__wrapper wrapper" data-width='desktop'>
             <div className="creation__banner">
                 <h2 className='creation__title' >our creations</h2>
-                 <button className='btn'>see all</button> 
+                <div className="theBtn">
+                    <button className='btn'>see all</button> 
+                </div>
             </div>
             <div className="creation__imgs">
                 {
@@ -33,8 +35,8 @@ const Creation = () => {
                     })
                 }
             </div>
-            {}
-            <button className='btn'>see all</button>
+            
+       
         </div>
     </section>
   )
